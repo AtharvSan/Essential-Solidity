@@ -5,7 +5,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/AtharvSan/solidity_cheatsheet)
 
 
-Solidity short notes and examples that compile. Now keep all your nuanced learnings stacked up in one place.
+Solidity short notes with examples that compile. Now keep all your nuanced learnings stacked up in one place.
 
 ![contract interface example](./types.png)
 ![call example](./call.png)
