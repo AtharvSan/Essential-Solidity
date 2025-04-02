@@ -1,9 +1,9 @@
 // --- part 1 of a 5 part series on essentials for solidity devs ---
-// - solidity_cheatsheet.sol
-// - cryptography_cheatsheet.sol
-// - assembly_cheatsheet.sol
-// - designPatterns_cheatsheet.sol
-// - security_cheatsheet.sol 
+// - Essential-Solidity
+// - Essential-Cryptography
+// - Essential-Assembly
+// - Essential-DesignPatterns
+// - Essential-Security 
 
 
 /* table of contents ----------------*/
@@ -11,6 +11,7 @@
 //      - license
 //      - pragma
 //      - imports
+//      - path resolution
 //      - contract
 //      - events
 //      - constructor
@@ -96,11 +97,13 @@ contract C is A {
 }
 
 
+/// @author AtharvSan
+/// @dev Part 1: compilable cheatsheet for solidity devs
 // contract
 // - create contracts using new, see constructor
 // - contract size limit 24kb
-// - contract bytecode is deployed onchain
-contract solidity_cheatsheet is B, C {
+// - contract bytecode is deployed onchain (each account has code and codehash section)
+contract EssentialSolidity is B, C {
     /* OOPs -----------------------------*/
     // - problem : large codebases are hard to manage
     // - solution : structure code into smaller packets.
@@ -129,7 +132,7 @@ contract solidity_cheatsheet is B, C {
     //      - C3 linearization to resolve inheritance conflicts: inheritance from right to left in the 'is' statement
     function getName() public pure override(B, C) returns (string memory) {
         // Resolves using C3 Linearization
-        // in our case method resolution order is: solidity_cheatsheet -> C -> B -> A
+        // in our case method resolution order is: EssentialSolidity -> C -> B -> A
         // so the getName() method of C is called
         return super.getName(); 
     }
@@ -150,7 +153,7 @@ contract solidity_cheatsheet is B, C {
     //          - libraries are deployed only when it contains external functions and called by delegatecall  
     //          - else its code is embedded into the calling contract at compile time
     //      - the calling convention is designed like internal call not following the abi standard
-    using SafeERC20 for IERC20;
+    using SafeERC20 for IERC20; 
     
 
     /* events ------------------------------*/
@@ -184,7 +187,7 @@ contract solidity_cheatsheet is B, C {
     // - executes once during deployment 
     // - can recieve ether during deployment
     // - its runtime code, not part of the contract
-    // - constructor execution order: B -> C -> solidity_cheatsheet
+    // - constructor execution order: B -> C -> EssentialSolidity
     //      - most base to most derived
     constructor(/* args1, args2 */) /* B(args1) C(args2) */ payable {
         wingman = new Wingman();
