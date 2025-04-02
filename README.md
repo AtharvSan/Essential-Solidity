@@ -33,21 +33,21 @@ Solidity docs can be overwhelming, if you want something short, Essential-Solidi
 ## Getting Started
 ### foundry
 ```bash
-  git clone https://github.com/AtharvSan/Essential-SolidityLanguage.git
-  cd Essential-SolidityLanguage
+  git clone https://github.com/AtharvSan/Essential-Solidity.git
+  cd Essential-Solidity
   forge install
   forge compile
 ```
 ### remix 
-just copy the code from src/Essential-SolidityLanguage.sol into remixIDE and you can start playing around.
+just copy the code from src/Essential-Solidity.sol into remixIDE and you can start playing around.
 
 ## Roadmap
 Part 1 of a 5 part series on essentials for solidity devs
-- Essential-SolidityLanguage
-- Essential-SolidityCryptography
-- Essential-EvmAssembly
-- Essential-SolidityDesignPatterns
-- Essential-SoliditySecurity
+- Essential-Solidity
+- Essential-Solidity-Cryptography
+- Essential-EVM-Assembly
+- Essential-Solidity-Design-Patterns
+- Essential-Solidity-Security
 
 ## FAQ
 
