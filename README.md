@@ -33,7 +33,7 @@ Solidity docs can be overwhelming, if you want something short, Essential-Solidi
 ## Getting Started
 ### foundry
 ```bash
-  git clone https://github.com/AtharvSan/Solidity.git
+  git clone https://github.com/AtharvSan/Essential-Solidity.git
   cd Solidity
   forge install
   forge compile
