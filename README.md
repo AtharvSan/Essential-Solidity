@@ -34,7 +34,7 @@ Solidity docs can be overwhelming, if you want something short, Essential-Solidi
 ### foundry
 ```bash
   git clone https://github.com/AtharvSan/Essential-Solidity.git
-  cd Solidity
+  cd Essential-Solidity
   forge install
   forge compile
 ```
